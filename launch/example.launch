@@ -1,0 +1,12 @@
+<launch>
+    <!--Spawn a gazebo -->
+    <include file="$(find robots_alarms)/launch/example_world.launch" />
+    <!--Spawn px4-->
+    <include file="$(find robots_alarms)/launch/example_px4.launch"/>
+    <!--Spawn Rviz-->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robots_alarms)/rviz/example.rviz" />
+    <!--run battery script-->
+    <node name="battery_alert" pkg="robots_alarms" type="battery_alert.py" args="1" output="screen"> <!-- this arg is just the id of the drone set in px4.launch file-->
+        <param name="battery_percent" value="0.6"/> <!-- when alert trigger -->
+    </node>
+</launch>
