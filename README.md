@@ -31,13 +31,16 @@ Dependencies:
 
 > roslaunch robot_alarms example.launch
 
-If everything is ok, you should see a empty world in gazebo, with an uav, and another window with Rviz.
+*If everything is ok, you should see a empty world in gazebo, with an uav, and another window with Rviz.*
 
-Foto gazebo
-Foto rviz
-And that is a rqt image showing how topics comunicate to each other:
-foto rosgraph
-🚀️If you want to have a better uav's view on rviz, you could use this package. Just add it example.launch
+![](https://github.com/gelardrc/robots_alarms/blob/main/img/default_gzclient_camera(1)-2024-12-07T12_03_41.383000.jpg)
+![](https://github.com/gelardrc/robots_alarms/blob/main/img/rviz.png)
+
+>🚀️If you want to have a better uav's view on rviz, you could use this package. Just add it in example.launch
+
+*And that is a rqt image showing how topics comunicate to each other:*
+
+![](https://github.com/gelardrc/robots_alarms/blob/main/img/rosgraph.png)
 
 # Topics
 
@@ -47,7 +50,7 @@ Publisher -  /battery_status
 
 Publisher - /battery_marker
 
-👀️ In this package we also have px4_example.py - you can ignore it. I only call it to drop UAV's battery
+👀️ In this package we also have px4_example.py - you can ignore it. I only wrote it to drop UAV's battery.
 
 # To do list
 
