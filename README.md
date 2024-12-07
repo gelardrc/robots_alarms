@@ -23,6 +23,8 @@ Dependencies:
 >
 > export ROS\_PACKAGE\_PATH=\$ROS\_PACKAGE\_PATH:\$(pwd)/Tools/simulation/gazebo-classic/sitl\_gazebo-classic
 
+> 🚀️ <a href="https://docs.px4.io/main/en/simulation/ros_interface.html">PX4 manual</a>
+
 # How to run
 
 > rosrun robot_alarms battery_alert.py <robot_id> <_battery_percent>
